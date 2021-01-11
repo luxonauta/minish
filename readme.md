@@ -43,7 +43,7 @@ If you want to rewrite or change something, to better suit your needs.
 You can start by cloning the repository:
 
 ```
-git clone https://github.com/luxonauta/luxa.git
+git clone https://github.com/luxonauta/minish.git
 ```
 
 This project needs [Node](https://nodejs.org/en/), as we use [Gulp](https://gulpjs.com/).
@@ -94,6 +94,10 @@ To use it, the syntax to be highlighted needs to be encapsulated by a `<pre>` ta
 You can add a button with the class `.js-copy` to copy the content with a click.
 
 Add the `code` tag with the data attribute `data-language` of the language you want to highlight.
+
+* HTML
+* CSS
+* JS (:hammer_and_wrench: WIP).
 
 For each line, encapsulate the content in a `span` tag with the `.line` class, and define the indentation with the date attribute `data-indent`.
 
