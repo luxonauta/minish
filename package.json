@@ -1,0 +1,33 @@
+{
+  "name": "minish",
+  "version": "1.0.0",
+  "description": "A minimal syntax highlighter.",
+  "main": "readme.md",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxonauta/minish.git"
+  },
+  "keywords": [
+    "syntax-highlighter",
+    "highlighter",
+    "minimal"
+  ],
+  "author": "Lucas de França",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luxonauta/minish/issues"
+  },
+  "homepage": "https://github.com/luxonauta/minish#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-coffee": "^3.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}

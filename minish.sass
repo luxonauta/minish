@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap")
+
+$bg: #1d1e26
+$pre-bg: #2a2c37
+
+$btn-bg: #bd93f9
+
+$white: #f8f8f2
+$pink: #ff79c6
+$green: #50fa7b
+$yellow: #f1fa8c
+$orange: #e89e64
+$purple: #988bc7
+$blue: #a1efe4
+
+$line-gap: .5rem
+$radius: .328rem
+
+pre
+    padding: 2rem
+    position: relative
+    overflow-x: auto
+    border-radius: .328rem
+    font-family: "Fira Code", monospace
+    background-color: $pre-bg
+
+    code
+        width: fit-content
+        height: auto
+        position: relative
+        overflow: hidden
+        display: grid
+        grid-auto-flow: row
+        gap: $line-gap
+        border-radius: $radius
+        font-family: inherit
+
+        span
+            color: $white
+            transition-property: color, background-color
+            transition-duration: .3s
+            transition-timing-function: ease-in-out
+
+            &.line
+                min-height: .5rem
+                position: relative
+                line-height: 1
+                font-size: .9rem
+
+                @for $i from 1 through 10
+                    &[data-indent="#{$i}"]
+                        padding: 0 1rem 0 #{1 * $i}rem
+
+            &.pink
+                color: $pink
+
+            &.green
+                color: $green
+
+            &.yellow
+                color: $yellow
+
+            &.purple
+                color: $purple
+
+            &.blue
+                color: $blue
+
+            &.orange
+                color: $orange
+
+            &::selection
+                color: $white
+                background-color: $bg
+
+            &::-moz-selection
+                color: $white
+                background-color: $bg
+
+    button
+        opacity: 0
+        margin: 0
+        padding: .5rem
+        position: absolute
+        top: 1rem
+        right: 1rem
+        outline: none
+        border: none
+        border-radius: .25rem
+        line-height: 1
+        text-transform: none
+        font-family: inherit
+        font-size: .9rem
+        font-weight: bold
+        color: $bg
+        cursor: pointer
+        background-color: $btn-bg
+        box-shadow: none
+        transition: opacity 0.4s ease-in-out
+        z-index: 2
+
+    &:focus,
+    &:focus-within,
+    &:hover
+        button
+            opacity: 1
