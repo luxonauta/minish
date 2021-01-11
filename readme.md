@@ -1,8 +1,8 @@
 # Minish
 
-> Minish the minimal syntax highlighter.
+> The minimal syntax highlighter.
 
-A Javascript library without dependency, lightweight, flexible and fast. Designed to highlight:
+A lib without dependency, lightweight, flexible and fast. Designed to highlight:
 
 * HTML
 * CSS
@@ -10,8 +10,9 @@ A Javascript library without dependency, lightweight, flexible and fast. Designe
 
 ## Table of contents
 
- - [How to set up](#how-to-set-up)
- - [How to use](#how-to-use)
+ - [How to set up](#:receipt:-how-to-set-up)
+ - [How to use](#:rocket:-how-to-use)
+ - [Demo](#demo)
  - [Copyright and License](#copyright-and-license)
 
 ## :receipt: How to set up
@@ -46,7 +47,7 @@ You can start by cloning the repository:
 git clone https://github.com/luxonauta/minish.git
 ```
 
-This project needs [Node](https://nodejs.org/en/), as we use [Gulp](https://gulpjs.com/).
+This project needs [Node](https://nodejs.org/en/), as he use [Gulp](https://gulpjs.com/).
 
 Make sure you installed it with the following commands:
 
@@ -64,7 +65,7 @@ npx --version
 
 If they are not installed, follow the instructions [here](https://nodejs.org/en/).
 
-#### Install the Gulp command line utility
+#### Install Gulp
 
 You can install it following the [Gulp installation tutorial](https://gulpjs.com/docs/en/getting-started/quick-start), or you can simply run the command on your terminal:
 
@@ -72,12 +73,12 @@ You can install it following the [Gulp installation tutorial](https://gulpjs.com
 npm i
 ```
 
-#### Verify your Gulp versions
+#### Verify your Gulp version
 
 ```sh
 gulp --version
 ```
-#### Test it
+#### Run
 
 Now all you have to do is initialize it:
 
@@ -121,6 +122,8 @@ See the example bellow:
     </code>
 </pre>
 ```
+
+## Demo
 
 Check the result below:
 
