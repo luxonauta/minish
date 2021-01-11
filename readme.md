@@ -10,12 +10,12 @@ A lib without dependency, lightweight, flexible and fast. Designed to highlight:
 
 ## Table of contents
 
- - [How to set up](#:receipt:-how-to-set-up)
- - [How to use](#:rocket:-how-to-use)
+ - [How to set up](#how-to-set-up)
+ - [How to use](#how-to-use)
  - [Demo](#demo)
  - [Copyright and License](#copyright-and-license)
 
-## :receipt: How to set up
+## How to set up
 
 ### by CDN
 
@@ -88,7 +88,7 @@ npm run gulp
 
 And you're ready! :ok_hand::grin:
 
-## :rocket: How to use
+## How to use
 
 To use it, the syntax to be highlighted needs to be encapsulated by a `<pre>` tag.
 
