@@ -24,7 +24,7 @@ You can use **Minish** by CDN, provided by the :mechanical_arm:[jsDeliver](https
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luxonauta/minish@latest/dist/minish.css">
 
-<script src="https://cdn.jsdelivr.net/gh/luxonauta/minish@latest/dist/minish.js" defer="true" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/gh/luxonauta/minish@latest/dist/minish.js" defer="true" crossorigin="anonymous"></script>
 ```
 
 ### By Download
