@@ -21,7 +21,7 @@ A lib without dependency, lightweight, flexible and fast. Designed to highlight:
 
 You can use **Minish** by CDN, provided by the :mechanical_arm:[jsDeliver](https://www.jsdelivr.com/) service, below:
 
-```
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luxonauta/minish@latest/dist/minish.css">
 
 <script src="https://cdn.jsdelivr.net/gh/luxonauta/minish@latest/dist/minish.js" defer="true" crossorigin="anonymous"></script>
@@ -31,10 +31,10 @@ You can use **Minish** by CDN, provided by the :mechanical_arm:[jsDeliver](https
 
 You can also download the files from the [dist/](https://github.com/luxonauta/minish/tree/master/dist) folder and include them in your HTML with a `link` and `script`.
 
-```
+```html
 <link rel="stylesheet" href="my-path/minish.css">
 
-<script src="my-path/minish.js" defer="true">
+<script src="my-path/minish.js" defer="true"></script>
 ```
 
 ### Rewrite and Change
@@ -43,7 +43,7 @@ If you want to rewrite or change something, to better suit your needs.
 
 You can start by cloning the repository:
 
-```
+```sh
 git clone https://github.com/luxonauta/minish.git
 ```
 
@@ -104,7 +104,7 @@ For each line, encapsulate the content in a `span` tag with the `.line` class, a
 
 See the example bellow:
 
-```
+```html
 <pre>
     <button class="js-copy">Copy</button>
     <code data-language="html">
