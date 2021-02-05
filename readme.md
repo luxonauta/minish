@@ -39,15 +39,13 @@ You can also download the files from the [dist/](https://github.com/luxonauta/mi
 
 ### Rewrite and Change
 
-If you want to rewrite or change something, to better suit your needs.
-
-You can start by cloning the repository:
+If you want to rewrite or change something, to suit your needs better. Start by cloning the repository:
 
 ```sh
 git clone https://github.com/luxonauta/minish.git
 ```
 
-This project needs [Node](https://nodejs.org/en/), as he use [Gulp](https://gulpjs.com/).
+This project needs [Node](https://nodejs.org/en/), as he uses [Gulp](https://gulpjs.com/).
 
 Make sure you installed it with the following commands:
 
@@ -63,11 +61,11 @@ npm --version
 npx --version
 ```
 
-If they are not installed, follow the instructions [here](https://nodejs.org/en/).
+If it is not installed, follow the instructions [here](https://nodejs.org/en/).
 
 #### Install Gulp
 
-You can install it following the [Gulp installation tutorial](https://gulpjs.com/docs/en/getting-started/quick-start), or you can simply run the command on your terminal:
+Install it following the [Gulp installation tutorial](https://gulpjs.com/docs/en/getting-started/quick-start), or run the command on your terminal:
 
 ```sh
 npm i
@@ -90,11 +88,11 @@ And you're ready! :ok_hand::grin:
 
 ## How to use
 
-To use it, the syntax to be highlighted needs to be encapsulated by a `<pre>` tag.
+The syntax to be highlighted needs to be encapsulated by a `<pre>` tag.
 
 You can add a button with the class `.js-copy` to copy the content with a click.
 
-Add the `code` tag with the data attribute `data-language` of the language you want to highlight.
+Add the `code` tag with the data attribute `data-language` of the language to be highlighted.
 
 * HTML
 * CSS
