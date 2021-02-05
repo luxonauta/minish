@@ -47,7 +47,7 @@ git clone https://github.com/luxonauta/minish.git
 
 This project needs [Node](https://nodejs.org/en/), as he uses [Gulp](https://gulpjs.com/).
 
-Make sure you installed it with the following commands:
+Make sure it is installed with the following commands:
 
 ```sh
 node --version
