@@ -8,13 +8,6 @@ A lib without dependency, lightweight, flexible and fast. Designed to highlight:
 * CSS
 * JS (:hammer_and_wrench: WIP).
 
-## Table of contents
-
- - [How to set up](#how-to-set-up)
- - [How to use](#how-to-use)
- - [Demo](#demo)
- - [Copyright and License](#copyright-and-license)
-
 ## How to set up
 
 ### by CDN
