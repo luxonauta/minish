@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () =>
-    document.querySelectorAll(".js-copy").forEach((copy) =>
+    document.querySelectorAll("pre.msh .js-copy").forEach((copy) =>
         copy.addEventListener("click", (e) =>
             e.preventDefault()
             
-            content = e.currentTarget.nextElementSibling
+            content = copy.nextElementSibling
             range = document.createRange()
             range.selectNode(content)
             
@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () =>
 
             try
                 successful = document.execCommand("copy")
+                copy.innerHTML = "Copied!"
+
+                setTimeout =>
+                    copy.innerHTML = "Copy"
+                , 1500
+
                 msg = successful ? "successful" : "unsuccessful"
                 console.log({ msg })
 
@@ -21,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () =>
         )
     )
 
-    document.querySelectorAll("pre code[data-language='html'] span.line").forEach((line) =>
+    document.querySelectorAll("pre.msh code[data-language='html'] span.line").forEach((line) =>
         content = line.innerHTML
         content = content.replaceAll(/(&lt;(\/?))(.+?(?=&gt;))(&gt;)/g, "$1<span class='c2'>$3</span>$4")
 
@@ -42,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () =>
         return
     )
 
-    document.querySelectorAll("pre code[data-language='css'] span.line").forEach((line) =>
+    document.querySelectorAll("pre.msh code[data-language='css'] span.line").forEach((line) =>
         content = line.innerHTML
         
         if line.dataset.indent

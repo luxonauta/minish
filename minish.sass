@@ -1,115 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap")
 
-\:root
-    --bg: #1d1e26
-    --pre-bg: #2a2c37
-    --c1: #ffffff
-    --c2: #ff79c6
-    --c3: #50fa7b
-    --c4: #f1fa8c
-    --c5: #ffb86c
-    --c6: #bd93f9
-    --c7: #8be9fd
-    --line-gap: .5rem
-    --radius: .328rem
-
-$bg: var(--bg)
-$pre-bg: var(--pre-bg)
-$c1: var(--c1)
-$c2: var(--c2)
-$c3: var(--c3)
-$c4: var(--c4)
-$c5: var(--c5)
-$c6: var(--c6)
-$c7: var(--c7)
-$line-gap: var(--line-gap)
-$radius: var(--radius)
+$hues: ("2": 330, "3": 135, "4": 65, "5": 30, "6": 265, "7": 195)
 
 pre
-    padding: 2rem
-    position: relative
-    overflow-x: auto
-    border-radius: .328rem
-    font-family: "Fira Code", monospace
-    background-color: $pre-bg
+    &.msh
+        --msh-radius: .375rem
+        --msh-line-gap: .5rem
 
-    code
-        width: fit-content
-        height: auto
-        position: relative
-        overflow: hidden
-        display: grid
-        grid-auto-flow: row
-        gap: $line-gap
-        border-radius: $radius
-        font-family: inherit
+        --msh-bg: hsl(230deg, 20%, 20%)
+        --msh-c1: hsl(0deg, 0%, 100%)
 
-        span
-            color: $c1
-            transition-property: color, background-color
-            transition-duration: .3s
-            transition-timing-function: ease-in-out
+        @each $name, $hue in $hues
+            --msh-c#{$name}: hsl(#{$hue}, 80%, 65%)
 
-            &.line
-                min-height: .5rem
-                position: relative
-                line-height: 1
-                font-size: .9rem
-
-                @for $i from 1 through 10
-                    &[data-indent="#{$i}"]
-                        padding: 0 1rem 0 #{1 * $i}rem
-
-            &.c2
-                color: $c2
-
-            &.c3
-                color: $c3
-
-            &.c4
-                color: $c4
-
-            &.c5
-                color: $c6
-
-            &.c6
-                color: $c7
-
-            &.c7
-                color: $c5
-
-            &::selection
-                color: $c1
-                background-color: $bg
-
-            &::-moz-selection
-                color: $c1
-                background-color: $bg
-
-    button
-        opacity: 0
         margin: 0
-        padding: .5rem
-        position: absolute
-        top: 1rem
-        right: 1rem
-        outline: none
-        border: none
-        border-radius: .25rem
-        line-height: 1
-        text-transform: none
-        font-family: inherit
-        font-size: .9rem
-        font-weight: bold
-        color: $bg
-        cursor: pointer
-        background-color: $c6
-        box-shadow: none
-        transition: opacity 0.4s ease-in-out
-        z-index: 2
+        padding: 2rem
+        position: relative
+        overflow-x: auto
+        display: block
+        border-radius: .328rem
+        white-space: pre
+        font-family: "Fira Code", monospace
+        background-color: var(--msh-bg)
 
-    &:focus,
-    &:focus-within,
-    &:hover
+        code
+            width: fit-content
+            width: -moz-fit-content
+            height: auto
+            position: relative
+            overflow: hidden
+            display: grid
+            grid-auto-flow: row
+            gap: var(--msh-line-gap)
+            border-radius: var(--msh-radius)
+            font-family: inherit
+
+            span
+                color: var(--msh-c1)
+                transition-property: color, background-color
+                transition-duration: .35s
+                transition-timing-function: ease-in-out
+
+                &.line
+                    min-height: .5rem
+                    position: relative
+                    line-height: 1
+                    font-size: .9rem
+
+                    @for $i from 1 through 10
+                        &[data-indent="#{$i}"]
+                            padding: 0 1rem 0 #{1 * $i}rem
+
+                &.c2
+                    color: var(--msh-c2)
+
+                &.c3
+                    color: var(--msh-c3)
+
+                &.c4
+                    color: var(--msh-c4)
+
+                &.c5
+                    color: var(--msh-c6)
+
+                &.c6
+                    color: var(--msh-c7)
+
+                &.c7
+                    color: var(--msh-c5)
+
         button
-            opacity: 1
+            opacity: 0
+            width: fit-content
+            width: -moz-fit-content
+            margin: 0
+            padding: .75rem 1rem
+            position: absolute
+            top: 1rem
+            right: 1rem
+            display: block
+            appearance: none
+            outline-style: none
+            cursor: pointer
+            border-radius: .25rem
+            border-style: none
+            line-height: 1
+            text-align: center
+            text-transform: none
+            text-decoration-line: none
+            font-family: inherit
+            font-size: .9rem
+            font-weight: 600
+            color: var(--msh-bg)
+            background-color: var(--msh-c6)
+            box-shadow: none
+            transition-property: opacity
+            transition-duration: .35s
+            transition-timing-function: ease-in-out
+            z-index: 2
+
+        &:focus,
+        &:focus-within,
+        &:hover
+            button
+                opacity: 1

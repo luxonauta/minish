@@ -8,6 +8,8 @@ A lib without dependency, lightweight, flexible and fast. Designed to highlight:
 * CSS
 * JS (:hammer_and_wrench: WIP).
 
+![A screenshot of the lib in use.](minish-preview.jpg)
+
 ## How to set up
 
 ### by CDN
@@ -81,7 +83,7 @@ And you're ready! :ok_hand::grin:
 
 ## How to use
 
-The syntax to be highlighted needs to be encapsulated by a `<pre>` tag.
+The syntax to be highlighted needs to be encapsulated by a `<pre class="msh">` tag.
 
 You can add a button with the class `.js-copy` to copy the content with a click.
 
@@ -96,7 +98,7 @@ For each line, encapsulate the content in a `span` tag with the `.line` class, a
 See the example bellow:
 
 ```html
-<pre>
+<pre class="msh">
     <button class="js-copy">Copy</button>
     <code data-language="html">
         <span class="line">&lt;!DOCTYPE html&gt;</span>
@@ -113,12 +115,6 @@ See the example bellow:
     </code>
 </pre>
 ```
-
-## Demo
-
-Check the result below:
-
-![A screenshot of the lib in use.](minish-preview.png)
 
 ## Copyright and License
 
